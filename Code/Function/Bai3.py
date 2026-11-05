@@ -9,3 +9,31 @@
             Neu tuoi >= 23 and tuoi <= 65: Di lam
             Con lai: Nghi huu
 """
+
+def nhap():
+    tuoi = int(input())
+    return tuoi
+
+def kiemTra(tuoi):
+    if tuoi <= 0:
+        print("Nhap sai")
+    elif tuoi < 11:
+        print("Cap 1")
+    elif tuoi < 16:
+        print("Cap 2")
+    elif tuoi < 18:
+        print("Cap 3")
+    elif tuoi < 23:
+        print("Dai hoc")
+    elif tuoi <= 65:
+        print("Di lam")
+    else:
+        print("Nghi huu")
+
+def main():
+    print("Nhap tuoi:", end = " ")
+    tuoi = nhap()
+    kiemTra(tuoi)
+    
+if __name__ == "__main__":
+    main()
