@@ -3,17 +3,17 @@
 """
 
 def nhap():
-    thang = int(input())
-    return thang
+    a = int(input())
+    return a
 
-def tinhNgay(thang):
+def tinhSoNgay(thang):
     match thang:
         case 1 | 3 | 5 | 7 | 8 | 10 | 12:
             print(f"Thang {thang} co 31 ngay")
         case 4 | 6 | 9 | 11:
             print(f"Thang {thang} co 30 ngay")
         case 2:
-            print("Nhap nam:", end = " ")
+            print("Nhap nam: ", end = "")
             nam = nhap()
             if (nam % 400 == 0) or (nam % 4 == 0 and nam % 100 != 0):
                 print(f"Thang {thang} co 29 ngay")
@@ -21,9 +21,9 @@ def tinhNgay(thang):
                 print(f"Thang {thang} co 28 ngay")
 
 def main():
-    print("Nhap thang:", end = " ")
+    print("Nhap thang: ", end = "")
     thang = nhap()
-    tinhNgay(thang)
+    tinhSoNgay(thang)
     
 if __name__ == "__main__":
     main()
