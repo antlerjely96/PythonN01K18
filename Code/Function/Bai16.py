@@ -5,46 +5,18 @@
     *       *
     *       *
     * * * * *
-    17. Ve hinh
-    *
-    * *
-    * * *
-    * * * *
-    * * * * *
-    18. Ve hinh
-    * * * * *
-    * * * *
-    * * *
-    * *
-    *
-    19. Ve hinh
-    *
-    * *
-    * * *
-    * * * *
-    * * * * *
-    * * * * *
-    * * * *
-    * * *
-    * *
-    *
-    20. Ve hinh
-    1
-    1 2
-    1 2 3
-    1 2 3 4
-    1 2 3 4 5
-    21. In bang cuu chuong
-    22. Ve hinh
-        *
-       ***
-      *****
-     *******
-    *********
-    23. Ve hinh
-        1
-       121
-      12321
-     1234321
-    123454321
 """
+def veHinh():
+    for i in range(5):
+        for j in range(5):
+            if i == 0 or i == 4 or j == 0 or j == 4:
+                print("*",end=" ")
+            else:
+                print(" ",end=" ")
+        print()
+
+def main():
+    veHinh()
+
+if __name__ == "__main__":
+    main()
